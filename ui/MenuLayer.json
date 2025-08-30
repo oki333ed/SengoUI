@@ -154,8 +154,8 @@
                                 "scale-multiplier": 1.185,
                                 "sprite": "GJ_logo_001.png",
                                 "position": {
-                                    "x": 14,
-                                    "y": -45,
+                                    "x": 0,
+                                    "y": -70,
                                     "anchor": {
                                         "to": "top-center",
                                         "relative": "screen"
