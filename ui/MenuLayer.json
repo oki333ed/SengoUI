@@ -219,7 +219,8 @@
                                         "id": "text",
                                         "attributes": {
                                             "text": "CMDs",
-                                            "font": "bigFont.fnt",
+                                            "font": "chatFont.fnt",
+                                            "scale": 2.2,
                                             "position": {
                                                 "anchor": {
                                                     "to": "center"
