@@ -1,0 +1,25 @@
+{
+    "children": {
+        "node": {
+            "PlayerObject": {
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCLabelBMFont",
+                            "id": "text",
+                            "attributes": {
+                                "text": "CMDs gay!!!\nWhy is text here?...",
+                                "font": "goldFont.fnt",
+                                "scale": 0.35,
+                                "position": {
+                                    "x": 0,
+                                    "y": 30
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
