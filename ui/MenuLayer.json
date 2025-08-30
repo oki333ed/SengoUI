@@ -1,0 +1,238 @@
+{
+    "children": {
+        "node": {
+            "bottom-menu": {
+                "attributes": {
+                    "layout": {
+                        "axis": "column"
+                    },
+                    "content-size": {
+                        "width": 65,
+                        "height": 302.5
+                    },
+                    "position": {
+                        "x": 30,
+                        "y": 0,
+                        "anchor": {
+                            "to": "center-left",
+                            "relative": "screen"
+                        }
+                    }
+                }
+            },
+            "right-side-menu": {
+                "attributes": {
+                    "layout": {
+                        "axis": "row"
+                    },
+                    "content-size": {
+                        "width": 180,
+                        "height": 48.5
+                    },
+                    "position": {
+                        "x": 0,
+                        "y": 50,
+                        "anchor": {
+                            "to": "bottom-center",
+                            "relative": "screen"
+                        }
+                    }
+                }
+            },
+            "social-media-menu": {
+                "attributes": {
+                    "position": {
+                        "x": -100,
+                        "y": 0,
+                        "anchor": {
+                            "to": "bottom-right",
+                            "relative": "screen"
+                        }
+                    }
+                },
+                "children": {
+                    "node": {
+                        "twitch-button": {
+                            "attributes": {
+                                "position": {
+                                    "x": -16,
+                                    "y": 40.5
+                                }
+                            }
+                        },
+                        "discord-button": {
+                            "attributes": {
+                                "position": {
+                                    "x": -16,
+                                    "y": 12
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "profile-menu": {
+                "attributes": {
+                    "position": {
+                        "x": -15,
+                        "y": 80,
+                        "anchor": {
+                            "to": "bottom-right",
+                            "relative": "screen"
+                        }
+                    }
+                }
+            },
+            "player-username": {
+                "attributes": {
+                    "position": {
+                        "x": -61,
+                        "y": 110,
+                        "anchor": {
+                            "to": "bottom-right",
+                            "relative": "screen"
+                        }
+                    }
+                }
+            },
+            "more-games-menu": {
+                "attributes": {
+                    "position": {
+                        "x": -64.5,
+                        "y": -40,
+                        "anchor": {
+                            "to": "top-right",
+                            "relative": "screen"
+                        }
+                    }
+                }
+            },
+            "close-menu": {
+                "attributes": {
+                    "layout": {
+                        "axis": "row",
+                        "axis-alignment": "start"
+                    },
+                    "content-size": {
+                        "width": 200,
+                        "height": 50
+                    },
+                    "position": {
+                        "x": 50,
+                        "y": -2,
+                        "anchor": {
+                            "to": "top-left",
+                            "relative": "screen"
+                        }
+                    }
+                }
+            },
+            "main-title": {
+                "attributes": {
+                    "visible": false
+                }
+            }
+        },
+        "new": [
+            {
+                "type": "CCMenu",
+                "id": "main-title-menu",
+                "attributes": {
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCMenuItemSpriteExtra",
+                            "id": "main-title-button",
+                            "attributes": {
+                                "scale": 0.925,
+                                "base-scale": 0.925,
+                                "scale-multiplier": 1.185,
+                                "sprite": "GJ_logo_001.png",
+                                "position": {
+                                    "x": 14,
+                                    "y": -45,
+                                    "anchor": {
+                                        "to": "top-center",
+                                        "relative": "screen"
+                                    }
+                                }
+                            },
+                            "event": {
+                                "on-activate": {
+                                    "attributes": {
+                                        "sound": "fire.ogg"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "CCMenu",
+                "id": "author-menu",
+                "attributes": {
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                "children": {
+                    "new": [
+                        {
+                            "type": "CCMenuItemSpriteExtra",
+                            "id": "author-button",
+                            "attributes": {
+                                "sprite": "square02b_001.png",
+                                "opacity": 0,
+                                "scale": 0.5,
+                                "base-scale": 0.5,
+                                "scale-multiplier": 1.2,
+                                "position": {
+                                    "x": 14,
+                                    "y": -12,
+                                    "anchor": {
+                                        "to": "top-center",
+                                        "relative": "screen"
+                                    }
+                                }
+                            },
+                            "event": {
+                                "on-activate": {
+                                    "attributes": {
+                                        "link": {
+                                            "type": "profile",
+                                            "id": 20750651
+                                        }
+                                    }
+                                }
+                            },
+                            "children": {
+                                "new": [
+                                    {
+                                        "type": "CCLabelBMFont",
+                                        "id": "text",
+                                        "attributes": {
+                                            "text": "CMDs",
+                                            "font": "bigFont.fnt",
+                                            "position": {
+                                                "anchor": {
+                                                    "to": "center"
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
